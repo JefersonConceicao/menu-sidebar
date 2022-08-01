@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a{
+    text-decoration: none
+}
+
+.menu-title-logo{
+    font-family: 'Square Peg', cursive;
+    display:inline;
+    margin-left:2%;
+}
+
+.menu-logo{
+    padding-right:3%;
+}
+
+.close-button{
+    font-size: 2rem;
+    color:#fff;
+    float:right;
+}
+
+.menu-container{
+    background-color: #457b9d;
+    width:250px;
+    overflow-x: hidden;
+    height:100%;
+    position:fixed;
+    box-shadow: 5px 0px #003459;
+    top:0;
+    left:0;
+    overflow-x: hidden;
+}
+
+.menu-links{
+    padding-top:4%;
+    padding-left:4%;
+}
+
+.menu-links li{
+    padding:2% 0px;
+    height:50px;
+    line-height: 50px;
+    list-style: none;
+    cursor:pointer;
+    border-bottom:1px solid #003459;
+    transition: border-bottom 1s ease-in;
+}
+
+.menu-links li a{ 
+    color:#fff;
+
+}
+.menu-links li a:hover{ 
+    color:#003459;
+}
+
+.menu-links li a i{ 
+    font-size:1.8rem;
+}
+
+.open-menu-mobile{
+    display:none;
+}
+
+.close-button{
+    display:none;
+}
+
+@media(max-width:500px){
+    .menu-container{
+        display:none;
+    }
+    .open-menu-mobile{
+        display:block;
+    }
+    .close-button{
+        display:inline;
+    }
+    .btn-open-sidebar-menu{
+        font-size: 2rem;
+        color:#457b9d
+    }
+    .opened{
+        display:block;
+    }
+}

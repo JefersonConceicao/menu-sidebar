@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css"/>
+    
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <title> Sidebar Responsivo CSS </title>
+</head>
+<body>
+
+    <!-- MOBILE -->
+    <div class="open-menu-mobile">
+        <a href="#" class="btn-open-sidebar-menu">
+            <i class="fas fa-list"></i>
+        </a>
+    </div>
+    <!-- END MOBILE -->
+
+    <div class="menu-container"> 
+        <div class="menu-logo">
+            <h1 class="menu-title-logo"> Logotipo </h1> 
+
+            <!-- MOBILE -->
+            <a href="#" class="close-button">
+                <i class="fas fa-close"> </i>  
+            </a>
+            <!-- END MOBILE -->
+        </div>
+        <ul class="menu-links">     
+            <li class="active"> 
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="menu-title">
+                        Home
+                    </span>
+                </a>
+            </li>
+            <li> 
+                <a href="#">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="menu-title">
+                        Mensagens
+                    </span>
+                </a>
+            </li>
+            <li> 
+                <a href="#">
+                    <i class="fa-solid fa-cog"></i>
+                    <span class="menu-title">
+                        Configurações
+                    </span>
+                </a>
+            </li>
+            <li> 
+                <a href="#">
+                    <i class="fa-solid fa-question"></i>
+                    <span class="menu-title">
+                        Ajuda
+                    </span>
+                </a>
+            </li>
+            <li> 
+                <a href="#">
+                    <i class="fa-solid fa-sign-in"></i>
+                    <span class="menu-title">
+                        Sair
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script> 
+        const btnOpenSidebarMenu = document.querySelector('.btn-open-sidebar-menu');
+        const closeButton = document.querySelector('.close-button');
+        const menuContainer = document.querySelector('.menu-container');
+
+        btnOpenSidebarMenu.onclick = () => {
+            menuContainer.classList.add('open-menu-mobile');
+        }
+
+        closeButton.onclick = () => {
+            menuContainer.classList.remove('open-menu-mobile');
+        }
+
+    </script>
+</body>
+</html>
